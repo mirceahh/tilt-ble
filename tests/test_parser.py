@@ -156,7 +156,9 @@ def test_short_advertisement_does_not_crash():
     # major/minor/tx-power triple.
     service_info = BluetoothServiceInfo(
         name="aa-bb-cc-dd-ee-ff",
-        manufacturer_data={76: b"\x02\x15\xa4\x95\xbb \xc5\xb1KD\xb5\x12\x13p\xf0-t\xde"},
+        manufacturer_data={
+            76: b"\x02\x15\xa4\x95\xbb \xc5\xb1KD\xb5\x12\x13p\xf0-t\xde"
+        },
         service_uuids=[],
         address="aa:bb:cc:dd:ee:ff",
         rssi=-60,
